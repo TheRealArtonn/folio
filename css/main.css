@@ -8,14 +8,36 @@
     box-sizing: border-box;
 }
 
-html,body {
+html, body {
     width: 100%;
     height: auto;
-    color: #000000;
+    color: #333333;
     font-family: 'Lato', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: #fff;
+    background-color: #F2F2F2;
+    scroll-behavior: smooth;
+}
+
+.over__title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #5CE48F;
+}
+
+.enormous__text {
+    font-size: 90px;
+    font-weight: 900;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+p.bread {
+    line-height: 30px;
 }
 
 /*========================================================*/
@@ -23,30 +45,185 @@ html,body {
 /*========================================================*/
 
 #wrapper {
-    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
 }
 
 nav {
+    width: 100%;
+    height: 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    z-index: 2;
+}
+
+#brand {
+    display: flex;
+    align-items: center;
+}
+
+#brand #logo {
+    width: 46px;
+    height: 40px;
+    background-image: url('../img/logo.svg');
+    background-repeat: no-repeat;
+}
+
+#brand p {
+    font-size: 24px;
+    font-weight: 900;
+    margin-left: 33px;
 }
 
 nav ul {
+    font-size: 24px;
+    font-weight: 900;
+    display: flex;
     list-style-type: none;
 }
 
 nav ul li {
+    margin-left: 60px;
 }
 
 nav ul li a {
-    font-size: 16px;
-    font-weight: 600;
-    color: black;
+    color: #333333;
     text-decoration: none;
 }
 
 nav ul li a:hover {
+    color: #5CE48F;
     text-decoration: underline;
 }
 
 header {
-    
+    width: 1490px;
+    height: 800px;
+    display: flex;
+    align-self: center;
+    z-index: 2;
 }
+
+#frontpage__content {
+    width: 100%;
+    position: relative;
+}
+
+#frontpage__content .over__title {
+    margin-top: 150px;
+}
+
+#logo__me {
+    width: 875px;
+    height: 655px;
+    background-image: url(../img/logo-art.svg);
+    position: absolute;
+    top: 50px;
+    right: -220px;
+}
+
+#header--bg {
+    width: 100%;
+    height: 1000px;
+    background-color: #fff;
+    transform: skewY(-16deg);
+    transform-origin: top left;
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+
+#header--pattern {
+    width: 100%;
+    height: 1000px;
+    background-image: url(../img/pattern.svg);
+    position: absolute;
+    top: 430px;
+    left: 100px;
+    z-index: 0;
+}
+
+header #frontpage__content .welcome__message .enormous__text {
+    width: 630px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    margin-top: 455px;
+    z-index: 2;
+}
+
+main section {
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+}
+
+#about__me {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+#about__me__content {
+    width: 1490px;
+    height: auto;
+    font-size: 18px;
+    padding: 140px 0px; 
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    grid-template-rows: 1fr 0fr;
+    grid-gap: 0px 0px;
+    grid-template-areas:
+    "introduction introduction"
+    "my__story my__reason";
+}
+
+#about__me__content .title {
+    margin-bottom: 25px;
+}
+
+.introduction { 
+    grid-area: introduction; 
+    border-bottom: 1px solid #D8EEF8;
+    padding-bottom: 40px;
+    margin-bottom: 110px;
+}
+
+.introduction__text {
+    width: 800px;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.my__story {
+    width: 850px;
+    height: 150px;
+    grid-area: my__story;
+}
+
+.my__reason {
+    width: 370px;
+    height: 150px;
+    grid-area: my__reason;
+}
+
+#education {
+    width: 100%;
+    height: 650px;
+    background-image: url(../img/bg.svg);
+    background-color: #1A2642;
+    background-size: cover;
+    background-position: top;
+}
+
