@@ -1,7 +1,52 @@
-body {
-    font-family: 'Lato', sans-serif;
+/*========================================================*/
+/*========================General=========================*/
+/*========================================================*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
+html,body {
+    width: 100%;
+    height: auto;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+/*========================================================*/
+/*==========================Body==========================*/
+/*========================================================*/
+
 #wrapper {
+    
+}
+
+nav {
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
     
 }
