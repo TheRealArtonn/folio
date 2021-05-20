@@ -26,9 +26,13 @@ html, body {
     color: #5CE48F;
 }
 
-.enormous__text {
+.enormous__text, .enormous__text--white {
     font-size: 90px;
     font-weight: 900;
+}
+
+.enormous__text--white {
+    color: #fff;
 }
 
 .title {
@@ -36,8 +40,12 @@ html, body {
     font-weight: 900;
 }
 
-p.bread {
+p.bread, p.bread--white {
     line-height: 30px;
+}
+
+p.bread--white {
+    color: #fff;
 }
 
 /*========================================================*/
@@ -225,5 +233,73 @@ main section {
     background-color: #1A2642;
     background-size: cover;
     background-position: top;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
+.education__width {
+    width: 1490px;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center
+}
+
+#education .place {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#education .place h3 {
+    font-size: 40px;
+    font-weight: 900;
+    color: #5CE48F;
+    text-align: center;
+}
+
+#education .place p {
+    width: 250px;
+    font-size: 30px;
+    color: #FFF;
+    text-align: center;
+}
+
+#education .place.place--edit p {
+    width: 400px;
+}
+
+#experience {
+    width: 100%;
+    height: 100vh;
+    background-color: #0C152C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#experience .experience__width {
+    width: 1490px;
+    height: auto;
+}
+
+#experience .enormous__text--white {
+    width: 830px;
+    margin-bottom: 20px;
+}
+
+#experience .text {
+    width: 830px;
+}
+
+#experience #skills {
+    width: 695px;
+    margin-top: 60px;
+}
+
+#experiences #cases {
+    
+}
