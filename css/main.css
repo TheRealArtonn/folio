@@ -405,7 +405,7 @@ main section {
     z-index: 1;
 }
 
-#cases #gallery .image__container div {
+#cases #gallery .image__container .image__text {
     width: 100%;
     height: 100%;
     font-size: 24px;
@@ -420,7 +420,7 @@ main section {
     z-index: 2;
 }
 
-#cases #gallery .image__container div:hover {
+#cases #gallery .image__container .image__text:hover {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.5);
 }
