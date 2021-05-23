@@ -25,19 +25,19 @@
             </ul>
         </nav>
         <header>
-            <section id="frontpage__content">
+            <div id="frontpage__content">
                 <div class="welcome__message">
                     <p class="over__title">Arton Agroni</p>
-                    <article class="enormous__text">
+                    <h2 class="enormous__text">
                         Hello I’m Arton
                         and I am a 
                         Web Designer
-                    </article>
+                    </h2>
                 </div>
                 <figure id="logo__me">
                     <img src="img/me.png" alt="An image of the designer">
                 </figure>
-            </section>
+            </div>
         </header>
         <div id="header--bg"></div>
         <div id="header--pattern"></div>
@@ -46,8 +46,8 @@
                 <div id="about__me__content">
                     <div class="introduction">
                         <p class="over__title">What do I do?</p>
-                        <p class="introduction__text">I enjoy creating userfriendly
-                        interactive experiences</p>
+                        <h2 class="introduction__text">I enjoy creating userfriendly
+                        interactive experiences</h2>
 
                     </div>
                     <div class="my__story">
@@ -86,14 +86,14 @@
                     <h2 class="enormous__text--white">
                         Research, Sketching and Design
                     </h2>
-                    <article class="text">
+                    <div class="text">
                         <p class="bread--white">I have always delved deep into my projects, making sure that every part of the design is there to create meaning and have a purpose. It has always been important for me that my designs make sense and are easy for users to use. Where everything is backed up by research and countless of sketches.
                         </p>
                         <p class="bread--white">
                         To do exacly that I have acquired experiences in many programs, to help me solve those tasks that come along my way.
                         </p>
-                    </article>
-                    <div id="skills" area-label="The designer is experienced in">
+                    </div>
+                    <div id="skills">
                         <img src="img/skills/Photoshop.svg" alt="Logo of the software Photoshop">
                         <img src="img/skills/Illustrator.svg" alt="Logo of the software Illustrator">
                         <img src="img/skills/XD.svg" alt="Logo of the software Adobe XD">
@@ -110,59 +110,59 @@
                     <h2>Cases</h2>
                     <div id="gallery">
                         <a href="https://xd.adobe.com/view/15f3146e-8048-4394-b064-5363bdff8e87-40a0/?fullscreen" target="notarget">
-                            <div class="image__container">
+                            <figure class="image__container">
                                 <div class="image__text">
                                     <h3>Blackvoid.io</h3>
                                     <p>Visit project</p>
                                 </div>
-                                <figur class="image">
+                                <div class="image">
                                     <img src="img/projects/blackvoid.jpg" alt="A blackhole, from the project blackvoid">
-                                </figur>
-                            </div>
+                                </div>
+                            </figure>
                         </a>
                         <a href="https://xd.adobe.com/view/4d21e796-6661-428c-8bbf-ebc7fa589857-1872/?fullscreen" target="notarget">
-                            <div class="image__container">
+                            <figure class="image__container">
                                 <div>
                                     <h3>Thurø TuristGuide</h3>
                                     <p>Visit project</p>
                                 </div>
-                                <figur class="image">
+                                <div class="image">
                                     <img src="img/projects/thuro.jpg" alt="Logo from the project Thurø turistguide">
-                                </figur>
-                            </div>
+                                </div>
+                            </figure>
                         </a>
                         <a href="http://projects.athaxdesigns.com/snakmedditbarn/" target="notarget">
-                            <div class="image__container">
+                            <figure class="image__container">
                                 <div>
                                     <h3>Snak med dit barn</h3>
                                     <p>Visit project</p>
                                 </div>
-                                <figur class="image">
+                                <div class="image">
                                     <img src="img/projects/snakmedditbarn.jpg" alt="A poster from the project snakmedditbarn">
-                                </figur>
-                            </div>
+                                </div>
+                            </figure>
                         </a>
                         <a href="https://xd.adobe.com/view/13047423-e609-49aa-90b2-56ecba392033-4657/" target="notarget">
-                            <div class="image__container">
+                            <figure class="image__container">
                                 <div>
                                     <h3>Reforgedmaps</h3>
                                     <p>Visit project</p>
                                 </div>
-                                <figur class="image">
+                                <div class="image">
                                     <img src="img/projects/reforgedmaps.jpg" alt="A image from the project reforgedmaps">
-                                </figur>
-                            </div>
+                                </div>
+                            </figure>
                         </a>
                         <a href="https://xd.adobe.com/view/699c6422-96d5-4b82-a286-997175347cfd-3ccf/" target="notarget">
-                            <div class="image__container">
+                            <figure class="image__container">
                                 <div>
                                     <h3>Dankos Multiservice</h3>
                                     <p>Visit project</p>
                                 </div>
-                                <figur class="image">
+                                <div class="image">
                                     <img src="img/projects/dankos.jpg" alt="The logo of the project Dankos">
-                                </figur>
-                            </div>
+                                </div>
+                            </figure>
                         </a>
                     </div>
                 </div>
@@ -172,19 +172,19 @@
                     <h2 class="enormous__text">Let us talk</h2>
                     <form>
                         <div class="input__box">
-                            <label>Your email:</label>
-                            <input type="email" placeholder="please type your email">
+                            <label for="email">Your email:</label>
+                            <input id="email" type="email" placeholder="please type your email">
                         </div>
                         <div class="input__box">
-                            <label>Your Subject:</label>
-                            <input type="text" placeholder="please type your subject">
+                            <label for="subject">Your Subject:</label>
+                            <input id="subject" type="text" placeholder="please type your subject">
                         </div>
                         <div class="input__box textarea">
-                            <label>Your Subject:</label>
-                            <textarea cols="30" rows="10" placeholder="please type your message"></textarea>
+                            <label for="textarea">Your Subject:</label>
+                            <textarea id="textarea" cols="30" rows="10" placeholder="please type your message"></textarea>
                         </div>
                         <button>Send your mail</button>
-                        <p>or send me a mail directly <a class="link" href="mailto: artonagroni@live.dk">artonagroni@live.dk</a></p>
+                        <p>or send me a mail directly <a class="link" href="mailto:artonagroni@live.dk">artonagroni@live.dk</a></p>
                     </form>
                 </div>
             </section>
