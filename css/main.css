@@ -658,6 +658,14 @@ footer #footer__width .footer__nav nav ul li a:hover {
         width: 1490px;
         grid-gap: 50px;
     }
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+    #cases {
+        padding: 0 50px;
+    }
 }
 
 @media only screen and (max-width: 1455px) {
@@ -769,7 +777,15 @@ footer #footer__width .footer__nav nav ul li a:hover {
     }
     
     header #frontpage__content .welcome__message .enormous__text {
-     width: 488px; 
+        width: 488px; 
+    }
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+    #cases #gallery {
+        grid-template-columns: repeat(2, minmax(250px, 1fr));
     }
 }
 
