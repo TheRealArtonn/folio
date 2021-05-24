@@ -772,3 +772,46 @@ footer #footer__width .footer__nav nav ul li a:hover {
      width: 488px; 
     }
 }
+
+@media only screen and (max-width: 1100px) {
+    
+    /*===================*/
+    /*****Experiences*****/
+    /*===================*/
+    
+    #experience {
+        padding: 0 50px;
+    }
+    
+    #experience .experience__width {
+        width: auto;
+        height: auto;
+        z-index: 1;
+    }
+    
+    #experience .enormous__text--white {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    #experience .text {
+        width: auto;
+    }
+    
+    #experience #skills {
+        width: auto;
+        margin-top: 70px;
+    }
+    
+    #experience #skills img {
+        margin-bottom: 10px;
+    }
+    
+    #experience #big__logo {
+        opacity: 0.3;
+    }
+}
+
+@media only screen and (max-width: 650px) {  
+
+}
