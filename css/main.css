@@ -869,6 +869,10 @@ footer #footer__width .footer__nav nav ul li a:hover {
 
 @media only screen and (max-width: 650px) {
     
+    .enormous__text, .enormous__text--white {
+        font-size: 50px;
+    }
+    
     /*===================*/
     /*****Experinces******/
     /*===================*/
