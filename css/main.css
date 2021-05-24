@@ -826,8 +826,69 @@ footer #footer__width .footer__nav nav ul li a:hover {
     #experience #big__logo {
         opacity: 0.3;
     }
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+    #contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 50px;
+    }
+    
+    #contact #contact__width {
+        width: auto;
+        height: auto;
+        margin-top: 200px;
+        margin-bottom: 200px;
+    }
+    
+    #contact #contact__width form {
+        width: 100%;
+    }
+    
+    #contact #contact__width form .input__box {
+        width: 100%;
+    }
+    
+    #contact #contact__width form input {
+        width: 100%;
+    }
+    #contact #contact__width form .input__box.textarea {
+        width: 100%;
+    }
+    #contact #contact__width form textarea {
+        width: 100%;
+    }
+    #contact #contact__width form button {
+        width: 100%;
+    }
 }
 
-@media only screen and (max-width: 650px) {  
+@media only screen and (max-width: 650px) {
+    
+    /*===================*/
+    /*****Experinces******/
+    /*===================*/
+    
+    #experience {
+        width: 100%;
+        height: auto;
+        padding: 100px 50px;
+    }
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+    #cases #gallery {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+}
+
+
+@media only screen and (max-width: 420px) {  
 
 }
