@@ -649,17 +649,85 @@ footer #footer__width .footer__nav nav ul li a:hover {
         width: 270px;
         margin-right: 100px;
     }
+    
+    /*===================*/
+    /******About me*******/
+    /*===================*/
+
+    #about__me__content {
+        width: 1490px;
+        grid-gap: 50px;
+    }
 }
 
-@media only screen and (max-width: 1265px) { 
+@media only screen and (max-width: 1455px) {
+    #about__me {
+        padding: 0 50px;
+    }
+    
+    #about__me__content {
+        width: 1490px;
+        height: auto;
+        font-size: 18px;
+        padding: 140px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 50px;
+        grid-template-areas:
+            "introduction introduction"
+            "my__story my__story"
+            "my__reason my__reason";
+    }
+    
+    .introduction__text {
+        width: auto;
+        min-width: 505px;
+        font-size: 40px;
+    }
+    
+    .my__story {
+        width: auto;
+        min-width: 505px;
+        margin-bottom: 50px;
+    }
+    
+    /*===================*/
+    /******Education******/
+    /*===================*/
+    
+    .education__width {
+        flex-direction: column;
+    }
+    
+    #education .place {
+        margin-bottom: 70px;
+    }
+    
+    #education .place:last-child {
+        margin-bottom: 0px;
+    }
+    
+    #education .place h3 {
+        font-size: 30px;
+    }
+    
+    #education .place p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 1265px) {
+    
+    .enormous__text, .enormous__text--white {
+        font-size: 70px;
+    }
+        
     #frontpage__content {
         width: 620px;
         height: auto;
         display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
         align-items: center;
-        z-index: 2;
     }
     
     #frontpage__content .over__title {
@@ -674,7 +742,6 @@ footer #footer__width .footer__nav nav ul li a:hover {
         position: relative;
         top: 0;
         right: 0;
-        z-index: 1;
         margin-right: -80px;
         margin-top: 50px;
     }
@@ -682,6 +749,10 @@ footer #footer__width .footer__nav nav ul li a:hover {
     #logo__me img {
         width: 180px;
         margin-right: 50px;
+    }
+    
+    #header--bg {
+        height: 1050px;
     }
     
     header #frontpage__content .welcome__message {
@@ -695,5 +766,9 @@ footer #footer__width .footer__nav nav ul li a:hover {
     header #frontpage__content .welcome__message p {
         display: flex;
         align-self: flex-start;
+    }
+    
+    header #frontpage__content .welcome__message .enormous__text {
+     width: 488px; 
     }
 }
