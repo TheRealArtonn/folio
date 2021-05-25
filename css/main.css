@@ -824,6 +824,11 @@ footer #footer__width .footer__nav nav ul li a:hover {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
         margin-bottom: 125px;
     }
+    
+    footer #footer__width .footer__nav {
+        width: auto;
+        height: auto;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -965,11 +970,11 @@ footer #footer__width .footer__nav nav ul li a:hover {
     }
     
     #contact #contact__width form input {
-        padding-left: 30px;
+        padding-left: 25px;
     }
     
     #contact #contact__width form textarea {
-        padding-left: 30px;
+        padding-left: 25px;
     }
     
     .footer__nav {
@@ -993,7 +998,7 @@ footer #footer__width .footer__nav nav ul li a:hover {
     
     #cases #gallery {
         grid-template-columns: repeat(1, minmax(250px, 1fr));
-    }    
+    }
 }
 
 @media only screen and (max-width: 650px) {
@@ -1072,6 +1077,24 @@ footer #footer__width .footer__nav nav ul li a:hover {
     
     #cases {
         padding: 0px 30px;
+    }
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+    footer {
+        height: auto;
+        padding: 50px 50px;
+    }
+    
+    footer #footer__width {
+        width: auto;
+    }
+    
+    footer #footer__width .footer__about {
+        width: auto;
+        height: auto;
     }
 }
 
