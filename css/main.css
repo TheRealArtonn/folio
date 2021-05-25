@@ -56,6 +56,26 @@ p.bread--white {
     color: #1b863b;
 }
 
+#mobile__menu {
+    display: none;
+}
+
+#mobile__menu .top {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding: 40px;
+}
+
+.menu__button {
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/icons/menu.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /*========================================================*/
 /*==========================Body==========================*/
 /*========================================================*/
@@ -690,8 +710,14 @@ footer #footer__width .footer__nav nav ul li a:hover {
     
     .introduction__text {
         width: auto;
-        min-width: 505px;
+        min-width: 300px;
         font-size: 40px;
+    }
+    
+    .over__title {
+        font-size: 18px;
+        font-weight: 600;
+        color: #5CE48F;
     }
     
     .my__story {
@@ -781,12 +807,22 @@ footer #footer__width .footer__nav nav ul li a:hover {
         width: 488px; 
     }
     
+    nav ul li {
+        margin-left: 40px;
+    }
+    
     /*===================*/
     /********Cases********/
     /*===================*/
     
+    #cases h2 {
+        margin-top: 125px;
+        margin-bottom: 50px;
+    }
+    
     #cases #gallery {
         grid-template-columns: repeat(2, minmax(250px, 1fr));
+        margin-bottom: 125px;
     }
 }
 
@@ -826,6 +862,9 @@ footer #footer__width .footer__nav nav ul li a:hover {
     
     #experience #big__logo {
         opacity: 0.3;
+        background-size: 1113px;
+        right: -750px;
+        bottom: -222px;
     }
     
     /*===================*/
@@ -868,10 +907,121 @@ footer #footer__width .footer__nav nav ul li a:hover {
     }
 }
 
+@media only screen and (max-width: 950px) {
+    nav ul li {
+        font-size: 18px;
+        margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 830px) {
+    
+    #mobile__menu {
+        width: 100%;
+        height: 60px;
+        color: #333333;
+        background-color: white;
+        border: 1px solid #D8EEF8;
+        display: block;
+        position: fixed;
+        bottom: 0;
+        right: 50%;
+        transform: translate(50%, 0);
+        z-index: 3;
+    }
+    
+    #mobile__menu nav {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+    }
+    
+    #mobile__menu ul {
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    #mobile__menu nav ul li {
+        margin-left: 0px;
+    }
+    
+    #mobile__menu nav ul li a {
+        height: 60px;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #desktop__menu {
+        display: none;
+    }
+    
+    #contact #contact__width form .input__box label {
+        display: none;
+    }
+    
+    #contact #contact__width form input {
+        padding-left: 30px;
+    }
+    
+    #contact #contact__width form textarea {
+        padding-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    #frontpage #desktop__menu {
+        
+    }
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+    #cases #gallery {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }    
+}
+
 @media only screen and (max-width: 650px) {
     
     .enormous__text, .enormous__text--white {
         font-size: 50px;
+    }
+
+    /*===================*/
+    /******Frontpage******/
+    /*===================*/
+    
+    #frontpage__content #logo__me {
+        width: 335px;
+        height: 250px;
+        margin-right: -40px;
+    }
+    
+    #logo__me img {
+        width: 135px;
+        margin-right: 40px;
+    }
+    
+    header #frontpage__content .welcome__message .enormous__text {
+        width: 350px;
+    }
+    
+    #header--bg {
+        height: 875px;
+    }
+    
+    #header--pattern {
+        width: 120%;
+        position: absolute;
+        top: 240px;
+        left: -75px;
     }
     
     /*===================*/
@@ -909,11 +1059,58 @@ footer #footer__width .footer__nav nav ul li a:hover {
     /*===================*/
     
     #cases #gallery {
-        grid-template-columns: repeat(1, minmax(250px, 1fr));
+        grid-gap: 25px;
+    }
+    
+    #cases {
+        padding: 0px 30px;
     }
 }
 
 
-@media only screen and (max-width: 420px) {  
+@media only screen and (max-width: 425px) {
+    
+    /*===================*/
+    /*****Experinces******/
+    /*===================*/
+    
+    #experience #skills img.phone__skill {
+        margin-right: 0px;
+    }
+}
 
+@media only screen and (max-width: 415px) {
+    
+    /*===================*/
+    /********Cases********/
+    /*===================*/
+    
+
+    
+    /*===================*/
+    /*****Experinces******/
+    /*===================*/
+    
+    #experience #skills img {
+        width: 75px;
+    }
+    
+    #experience #skills img.phone__skill {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    
+    /*===================*/
+    /*****Experinces******/
+    /*===================*/
+    
+    #experience #skills img {
+        width: 65px;
+    }
+    
+    #experience #skills img.phone__skill {
+        margin-right: 10px;
+    }
 }
