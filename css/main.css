@@ -600,7 +600,7 @@ footer #footer__width .footer__about p {
 
 
 footer #footer__width .footer__nav {
-    width: 400px;
+    width: 250px;
     height: auto;
 }
 
@@ -914,7 +914,7 @@ footer #footer__width .footer__nav nav ul li a:hover {
 
 @media only screen and (max-width: 950px) {
     nav ul li {
-        font-size: 18px;
+        font-size: 16px;
         margin-left: 30px;
     }
 }
